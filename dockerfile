@@ -16,7 +16,7 @@ RUN apt-get update && \
     wget "https://github.com/DanielSWolf/rhubarb-lip-sync/releases/download/v${RHUBARB_VERSION}/rhubarb-lip-sync-${RHUBARB_VERSION}-linux.zip" -O rhubarb.zip && \
     unzip rhubarb.zip -d /tmp/rhubarb && \
     # Move the executable to a standard bin directory and make it executable
-    mv "/tmp/rhubarb/rhubarb-lip-sync-${RHUBARB_VERSION}-linux/rhubarb" /usr/local/bin/rhubarb && \
+    mv "/tmp/rhubarb/rhubarb" /usr/local/bin/rhubarb && \
     chmod +x /usr/local/bin/rhubarb && \
     \
     # Clean up downloaded files and apt cache to reduce image size
